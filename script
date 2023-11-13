@@ -1,3 +1,62 @@
+--Load
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+--Main
+local Window = OrionLib:MakeWindow({Name = "Auto Farm UGC", HidePremium = false, SaveConfig = true, ConfigFolder = "Auto"})
+
+--Script
+local AutoFarmTab = Window:MakeTab({
+    Name = "Farm",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = AutoFarmTab:AddSection({
+    Name = "Auto Punch"
+})
+AutoFarmTab:AddButton({
+    Name = "Ativar",
+    Callback = function()      
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Punch-simulator-ugc/main/auto%20bater"))()
+    end
+})
+
+AutoFarmTab:AddButton({
+    Name = "Desativar",
+    Callback = function()      
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Punch-simulator-ugc/main/desativar%20punch"))()
+    end
+})
+
+local Section = AutoFarmTab:AddSection({
+    Name = "Forest2"
+})
+
+AutoFarmTab:AddButton({
+    Name = "Ativar",
+    Callback = function()      
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Punch-simulator-ugc/main/abrir%20ovos%20forest2"))()
+    end
+})
+
+AutoFarmTab:AddButton({
+    Name = "Desativar",
+    Callback = function()      
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Punch-simulator-ugc/main/desativar%20ovo"))()
+    end
+})
+
+local ScriptModeloTab = Window:MakeTab({
+    Name = "Script Modelo",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+ScriptModeloTab:AddButton({
+    Name = "SimpleSpy",
+    Callback = function()      
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+    end
+})
 
 AutoFarmTab:AddDropdown({
 	Name = "Dropdown",
@@ -7,3 +66,10 @@ AutoFarmTab:AddDropdown({
 		print(Value)
 	end    
 })
+
+--[[
+Name = <string> - The name of the dropdown.
+Default = <string> - The default value of the dropdown.
+Options = <table> - The options in the dropdown.
+Callback = <function> - The function of the dropdown.
+]]
