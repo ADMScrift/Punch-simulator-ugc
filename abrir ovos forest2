@@ -1,0 +1,5 @@
+local args = {
+    [1] = "Forest2"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PlayerPressedKeyOnEgg"):FireServer(unpack(args))
