@@ -1,12 +1,9 @@
-_G.Fight = true
+
+_G.auto = true
 
 while true do
     wait(0.00000001)
-    if _G.Fight == true then
-    local args = {
-    [1] = "StopFight"
-    }
-
-    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AutoFight"):FireServer(unpack(args))
+    if _G.auto == true then
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
     end
 end
