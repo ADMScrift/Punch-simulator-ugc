@@ -1,9 +1,0 @@
-
-_G.auto = true
-
-while true do
-    wait(0.00000001)
-    if _G.auto == true then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Punch-simulator-ugc/main/fight%20script"))()
-    end
-end
