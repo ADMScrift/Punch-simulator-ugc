@@ -2,7 +2,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 --Main
-local Window = OrionLib:MakeWindow({Name = "Auto Farm UGC", HidePremium = false, SaveConfig = true, ConfigFolder = "Auto"})
+local Window = OrionLib:MakeWindow({Name = "UGC FARM", HidePremium = false, SaveConfig = true, ConfigFolder = "Auto"})
 
 --Script
 local AutoFarmTab = Window:MakeTab({
